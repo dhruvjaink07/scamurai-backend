@@ -12,7 +12,7 @@ load_dotenv()
 client = chromadb.PersistentClient(path='db')
 collection = client.get_or_create_collection('collection')
 
-llm = ChatMistralAI(model="mistral-small", temperature=0.7, mistral_api_key=os.getenv("MISTRAL_API_KEY"))
+llm = ChatMistralAI(model="mistral-small", temperature=0.7, mistral_api_key="NM2VIL7fhKN43yVKIe9usxG4NjReH9M2")
 history = []
 
 template = """
